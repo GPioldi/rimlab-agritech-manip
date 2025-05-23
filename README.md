@@ -1,6 +1,6 @@
 # Development of a Control Software for Coordinating a Robotic Manipulator for Fruit Harvesting
 
-> **Bachelor/Master Thesis – Department of Engineering & Architecture – University of Parma**  
+> **Bachelor Thesis – Department of Engineering & Architecture – University of Parma**  
 > Author: *Giuliano Pioldi* – Academic year 2023‑24  
 > Supervisors: **Prof. Ing. Ph.D. Dario Lodi Rizzini**, **Dr. Ing. Ph.D. Cand. Alessio Saccuti**  
 > Laboratory: **RIMLAB – Robotics and Intelligent Machines Laboratory**
