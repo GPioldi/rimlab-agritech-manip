@@ -1,0 +1,43 @@
+  1) Package da compilare per accedere allo stato del robot:
+    
+       rosbuild ur_ros_rtde ur10e_description  ur10e_agritech_moveit_config agritech_manip
+       rosbuilf ur10e_arm_ikfast_plugin
+       
+  2) Il package ur10e_agritech_moveit_config si basa su ur10e_description/urdf/ur10e.urdf e ur10e_d405_description2/urdf/ur10e_d405_husky.urdf
+    
+  3) Il file launch manip/ur10e/ur_ros_rtde/ur_ros_rtde/launch/robot_state_receiver_husky.launch.py deve avere impostati:
+          robot_ip = "192.168.131.11"  # robot ip, example 127.0.0.1
+          robot_description_package = "ur10e_d405_description2" # ros2 pkg containing 3D files of the robot (example: ur10e_description)
+          urdf_file_name = 'urdf/ur10e_d405_husky.urdf' 
+     Attenzione ai file altrimenti non visualizza su rviz il modello del robot. 
+     
+ 4) Install realsense ....
+ 
+ 
+ 5) Installazione di pythorch. Procediamo senza anaconda o altri ambienti per gestione versioni.  
+    Installare e aggiornare pip: 
+
+      sudo apt install python3-pip
+      pip install --upgrade pip
+
+    Installare pytorch senza conda e con supporto GPU: 
+
+      pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+    Installare pytorch senza conda e con supporto solo CPU: 
+
+       pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+    Riferimento (uno dei tanti): https://docs.vultr.com/how-to-install-pytorch-on-ubuntu-22-04
+
+6) Download dei pesi della rete Faster R-CNN addestrata
+   
+      cd Downloads   [directory impostata in tomato_detector.py: sarebbe da cambiare e da specificare come param...] 
+      wget --no-check-certificate https://www.ce.unipr.it/~rizzini/papers/datasets/agritech/faster_rcnn_parameters/faster_rcnn.pth
+
+7) Installazione altri moduli Python richiesti da tomato_detection
+
+      pip3 install pyrealsense2
+       
+       
+  

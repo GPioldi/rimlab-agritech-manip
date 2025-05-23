@@ -1,0 +1,17 @@
+<launch>
+  <arg name="pointcloud" default="true" />
+  
+  <include file="$(find-pkg-share realsense2_camera)/launch/rs_launch.py">
+    <arg name="enable_infra" value="true" />
+    <arg name="enable_depth" value="true" />
+    <arg name="depth_module.infra_profile" value="1280x720x5" />
+    <arg name="depth_module.depth_profile" value="1280x720x5" />
+    <arg name="depth_module.exposure" value="40000.0" />
+    <arg name="rgb_camera.profile" value="1280x720x5" />
+    <arg name="pointcloud.enable" value="$(var pointcloud)" />
+    <arg name="pointcloud.ordered_pc" value="false" />
+    <arg name="pointcloud.allow_no_texture_points" value="true" />
+    <arg name="align_depth.enable" value="true" />
+    <arg name="colorizer.enable" value="false" />
+  </include>
+</launch>
