@@ -164,12 +164,12 @@ rimlab-agritech-manip/
 ## Images & Media
 | Image | Caption |
 |-------|---------|
-| ![Manipulator configuration](docs/images/ManipulatorConfiguration.jpeg) | **Bench set‑up of the UR10e manipulator.** 6‑DOF arm clamped on a rigid frame inside RIMLAB for kinematic calibration and controller tuning. |
-| ![Husky configuration](docs/images/HuskyConfiguration.jpeg) | **UR10e on Husky UGV.** Complete mobile manipulation platform; note the RealSense D435i on the wrist and the soft gripper. |
-| ![Robot parts](docs/images/RobotParts.jpeg) | **Joint and link naming scheme.** Helpful when referencing torque or position feedback in code and during troubleshooting. |
-| ![Lab experiment 1](docs/images/LabExperiment_1.jpeg) | **Lab trial – approach phase.** The arm aligns the end‑effector with a ripe tomato detected by the vision stack. |
-| ![Lab experiment 2](docs/images/LabExperiment_2.jpeg) | **Lab trial – detachment detection.** Snapshot taken as the torque threshold indicates successful fruit pick. |
-| ![On‑field experiment](docs/images/OnFieldExperiment.jpeg) | **First on‑field test.** Husky navigates a tomato row in an outdoor plot; the manipulator harvests under natural lighting. |
+| ![Manipulator configuration](agritech_manip/docs/images/ManipulatorConfiguration.jpeg) | **Bench set‑up of the UR10e manipulator.** 6‑DOF arm clamped on a rigid frame inside RIMLAB for kinematic calibration and controller tuning. |
+| ![Husky configuration](agritech_manip/docs/images/HuskyConfiguration.jpeg) | **UR10e on Husky UGV.** Complete mobile manipulation platform; note the RealSense D435i on the wrist and the soft gripper. |
+| ![Robot parts](agritech_manip/docs/images/RobotParts.jpeg) | **Joint and link naming scheme.** Helpful when referencing torque or position feedback in code and during troubleshooting. |
+| ![Lab experiment 1](agritech_manip/docs/images/LabExperiment_1.jpeg) | **Lab trial – approach phase.** The arm aligns the end‑effector with a ripe tomato detected by the vision stack. |
+| ![Lab experiment 2](agritech_manip/docs/images/LabExperiment_2.jpeg) | **Lab trial – detachment detection.** Snapshot taken as the torque threshold indicates successful fruit pick. |
+| ![On‑field experiment](agritech_manip/docs/images/OnFieldExperiment.jpeg) | **First on‑field test.** Husky navigates a tomato row in an outdoor plot; the manipulator harvests under natural lighting. |
 
 > **Video footage** will be uploaded in `docs/videos/` and embedded in the Wiki.
 
